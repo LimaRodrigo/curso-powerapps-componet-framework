@@ -29,7 +29,6 @@ function PositiveValidation(props: IPositiveValidationProps) {
         <div className='positivevalidation-container'>
             {!props.loading &&
                 <>
-                    {console.log('questions', props)}
                     {props.questions.map((question) => (
                         <CardInfo
                             key={question.dyndev_positiveconfirmationquestionsid}
@@ -68,4 +67,3 @@ function PositiveValidation(props: IPositiveValidationProps) {
     );
 }
 export default memo(PositiveValidation);
-//export default PositiveValidation;

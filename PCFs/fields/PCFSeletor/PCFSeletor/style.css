@@ -1,9 +1,9 @@
 .seletor-main-container {
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    max-width: 500px;
+    margin: 0px 5px 0px 5px;
 }
+
 .seletor-list-container {
     display: flex;
     flex-direction: row;
@@ -11,4 +11,11 @@
     justify-content: flex-start;
     gap: 8px;
     cursor: pointer;
+}
+
+.selector-fluent-provider {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }

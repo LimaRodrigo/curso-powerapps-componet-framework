@@ -4,4 +4,10 @@
         "module": "esnext",
         "moduleResolution": "bundler"
     }
+    ,
+    "include": [
+        "src/**/*",
+        "**/*.ts",
+        "**/*.tsx"
+    ]
 }

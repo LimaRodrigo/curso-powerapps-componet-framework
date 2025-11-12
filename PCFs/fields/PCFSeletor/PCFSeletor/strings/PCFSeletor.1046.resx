@@ -71,8 +71,13 @@
     <value>Validação Positiva</value>
     <comment/>
   </data>
+  <!-- 
   <data name="msgbar-body-main" xml:space="preserve">
     <value>não foi necessária devido validação anterior.</value>
+    <comment/>
+  </data> -->
+    <data name="msg-validation-outptus" xml:space="preserve">
+    <value>Validação positiva realizada com sucesso.</value>
     <comment/>
   </data>
 </root>

@@ -5,6 +5,7 @@ import * as React from "react";
 export class PCFSeletor implements ComponentFramework.ReactControl<IInputs, IOutputs> {
     private notifyOutputChanged: () => void;
     private validationDate: Date;
+    private validationDetails: string;
     /**
      * Empty constructor.
      */
@@ -45,7 +46,8 @@ export class PCFSeletor implements ComponentFramework.ReactControl<IInputs, IOut
      */
     public getOutputs(): IOutputs {
         return {
-            dtLastValidation: this.validationDate
+            dtLastValidation: this.validationDate,
+            validationDetailsForNotification: this.validationDetails
         };
     }
 
@@ -63,8 +65,9 @@ export class PCFSeletor implements ComponentFramework.ReactControl<IInputs, IOut
      * diparando para o método notifyOutputChanged
      * @param validationDate Data da última validação positiva
      */
-    public setOutputChanges = (validationDate: Date) => {
+    public setOutputChanges = (validationDate: Date, validationDetails: string) => {
         this.validationDate = validationDate;
+        this.validationDetails = validationDetails;
         this.notifyOutputChanged();
     }
 }

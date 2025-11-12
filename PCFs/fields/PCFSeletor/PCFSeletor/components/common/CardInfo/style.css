@@ -1,12 +1,13 @@
 .CardInfo-container {
-    max-width: 500px;
+    /* max-width: 500px; */
+    width: 100%;
     max-height: 100px;
     min-height: 40px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 12px;
-    margin: 5px;
+    padding: 5px 0px 5px 5px;
+    margin: 5px 0px 5px 0px;
     justify-content: center;
     background-color: rgba(230, 244, 234, 0.2);
     border: 0.5px solid rgba(52, 168, 83, 0.4);
